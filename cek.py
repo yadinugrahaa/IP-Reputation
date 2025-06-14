@@ -41,9 +41,9 @@ for row in range(2, sheet.max_row + 1):
         status = f'Error: {str(e)}'
 
     sheet[f'B{row}'] = status
-    time.sleep(16)  # Hindari rate limit (untuk public API)
+    time.sleep(16)  # biar ga kena rate soalnya cuman blm research lebih jauh sih (untuk public API)
 
-# Simpan hasil ke file baru
-output_file = 'D:\Hasil 1.xlsx' # ini diatur aja buat outputnya
+# Output File
+output_file = 'D:\Hasil 1.xlsx' # ini diatur aja buat outputnya yg penting .xlsx
 wb.save(output_file)
 print(f'Result saved to {output_file}')
